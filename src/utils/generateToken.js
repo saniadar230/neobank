@@ -15,3 +15,7 @@ export function generateToken(length = 6) {
 
   return token;
 }
+
+export function generateRefreshToken() {
+  return crypto.randomBytes(64).toString("hex");
+}
